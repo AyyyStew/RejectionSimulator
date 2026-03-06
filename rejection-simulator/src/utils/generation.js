@@ -94,7 +94,7 @@ function generate_body(data) {
   for (const field of templateObj.fields) {
     if (!(field in data)) throw new Error(`Missing field: ${field}`);
   }
-  return templateObj.fn(data) + generate_signature(data);
+  return templateObj.fn(data) + "</br>" + generate_signature(data);
 }
 
 export function generate() {
