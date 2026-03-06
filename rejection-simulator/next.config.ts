@@ -5,8 +5,8 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
-  basePath: isProd ? "/rejection-simulator" : "",
-  assetPrefix: isProd ? "/rejection-simulator/" : "",
+  basePath: isProd ? "/RejectionSimulator" : "",
+  assetPrefix: isProd ? "/RejectionSimulator/" : "",
 };
 
 export default nextConfig;
